@@ -52,12 +52,41 @@ products.forEach((product) => {
           Added
         </div>
 
-        <button class="add-to-cart-button button-primary">
+        <button class="add-to-cart-button button-primary js-add-to-cart" data-product-id="${
+          product.id
+        }"> 
           Add to Cart
         </button>
       </div>
   `;
 });
+// for transfering the product name we are using data attribute
+//data attribute is just an html attribute, have to start with "data", then give it any name
 
 document.querySelector(".js-products").innerHTML = productsHTML;
-console.log(productsHTML);
+// console.log(productsHTML);
+
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+  button.addEventListener("click", () => {
+    //dataset gice all the attributes attaches with the element
+    const productId = button.dataset.productId;
+    let matchingItem;
+    // console.log(productName);
+
+    cart.forEach((item) => {
+      if (productId === item.productId) {
+        matchingItem = item;
+      }
+    });
+
+    if (matchingItem) {
+      matchingItem.quantity += 1;
+    } else {
+      cart.push({
+        productId: productId,
+        quantity: 1,
+      });
+    }
+    console.log(cart);
+  });
+});
