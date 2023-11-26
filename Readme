@@ -1,0 +1,4 @@
+using a variable out of the file 1. Add type ="module" attribute 2. Export 3.
+Import in amazon.html file type = "module" attribute lets this file get
+variables out of other files
+module helps to avoid naming conflicts 
