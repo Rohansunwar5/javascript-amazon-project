@@ -1,7 +1,7 @@
 // we are gonna use accumulator pattern: it is the pattern in which we loop through an array and add it on the same variable
 import { cart } from "../data/cart.js";
 // we can name the imported variable as another name too using import {cart as myCart}
-
+import { products } from "../data/products.js";
 let productsHTML = "";
 
 products.forEach((product) => {
