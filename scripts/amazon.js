@@ -2,7 +2,7 @@
 import { cart, addtoCart } from "../data/cart.js";
 // we can name the imported variable as another name too using import {cart as myCart}
 import { products } from "../data/products.js";
-import { formatCurrency } from "./utils/money.js";
+import formatCurrency from "./utils/money.js";
 let productsHTML = "";
 
 products.forEach((product) => {

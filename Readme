@@ -4,3 +4,12 @@ variables out of other files
 module helps to avoid naming conflicts 
 
 Normalizing the data : dedublicatiing the data 
+
+External library is the code that is outside the project 
+external library lets us share code 
+
+Minification is the process of minifying the code, in other words we can say that it is being compressed so that the code loads faster with the code base 
+
+To use external javascript library in our code we use ESM Version (which is javascript itself )
+
+it is a version that works with javascript modules 
