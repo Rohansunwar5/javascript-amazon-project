@@ -13,3 +13,5 @@ Minification is the process of minifying the code, in other words we can say tha
 To use external javascript library in our code we use ESM Version (which is javascript itself )
 
 it is a version that works with javascript modules 
+
+techinque where we update thte data and regenerate all the data is called MVC (model view controller)
