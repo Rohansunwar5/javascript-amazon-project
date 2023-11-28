@@ -5,10 +5,6 @@ import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
 // this is a default export
 import { deliveryOptions } from "../../data/deliveryOptions.js";
 
-const today = dayjs();
-const deliveryDate = today.add(7, "days");
-console.log(deliveryDate.format("dddd, MMMM D"));
-
 export const renderOrderSummary = () => {
   let cartSummaryHTML = "";
 
